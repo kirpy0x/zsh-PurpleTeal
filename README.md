@@ -7,24 +7,27 @@ A PurpleMint ZSH theme
 Powerline looking zsh theme with rvm prompt, git status and branch, current time, user, hostname, pwd, exit status, root and background job status.
 
 Influenced heavily by [agnoster's theme](https://gist.github.com/3712874) and [jeremyFreeAgent's theme](https://github.com/jeremyFreeAgent/oh-my-zsh-powerline-theme)
+
 Forked from [consolemaverick](https://github.com/consolemaverick/zsh2000)
 
 ### Prerequisites
 
 My Terminal: Kitty
+
 My Font: ComicMono
 
 ### Installation
 
 Past this into your `.zshrc`.
 ```sh
+# Install if not already installed
 if [ -f ~/.oh-my-zsh/custom/themes/PurpleMint.zsh-theme ]; then
 else
   git clone https://github.com/kirpy0x/zsh-PurpleMint.git ~/.oh-my-zsh/custom/themes/PurpleMint
   mv ~/.oh-my-zsh/custom/themes/PurpleMint/PurpleMint.zsh-theme ~/.oh-my-zsh/custom/themes/PurpleMint.zsh-theme
   rm -rf ~/.oh-my-zsh/custom/themes/PurpleMint
 fi
-
+# Enable
 ZSH_THEME="PurpleMint"
 ```
 
