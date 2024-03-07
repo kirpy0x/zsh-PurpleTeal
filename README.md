@@ -1,7 +1,7 @@
-A PurpleMint ZSH theme
+A Purple & Teal ZSH theme
 ======
 
-![alt tag](https://raw.githubusercontent.com/kirpy0x/zsh-PurpleMint/master/demo.png)
+![alt tag](https://raw.githubusercontent.com/kirpy0x/zsh-PurpleTeal/master/demo.png)
 
 
 Powerline looking zsh theme with rvm prompt, git status and branch, current time, user, hostname, pwd, exit status, root and background job status.
@@ -21,14 +21,14 @@ My Font: ComicMono
 Past this into your `.zshrc`.
 ```sh
 # Install if not already installed
-if [ -f ~/.oh-my-zsh/custom/themes/PurpleMint.zsh-theme ]; then
+if [ -f ~/.oh-my-zsh/custom/themes/PurpleTeal.zsh-theme ]; then
 else
-  git clone https://github.com/kirpy0x/zsh-PurpleMint.git ~/.oh-my-zsh/custom/themes/PurpleMint
-  mv ~/.oh-my-zsh/custom/themes/PurpleMint/PurpleMint.zsh-theme ~/.oh-my-zsh/custom/themes/PurpleMint.zsh-theme
-  rm -rf ~/.oh-my-zsh/custom/themes/PurpleMint
+  git clone https://github.com/kirpy0x/zsh-PurpleTeal.git ~/.oh-my-zsh/custom/themes/PurpleTeal
+  mv ~/.oh-my-zsh/custom/themes/PurpleTeal/PurpleTeal.zsh-theme ~/.oh-my-zsh/custom/themes/PurpleTeal.zsh-theme
+  rm -rf ~/.oh-my-zsh/custom/themes/PurpleTeal
 fi
 # Enable
-ZSH_THEME="PurpleMint"
+ZSH_THEME="PurpleTeal"
 ```
 
 ### Configuration
