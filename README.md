@@ -1,33 +1,34 @@
-ZSH2000
+A PurpleMint ZSH theme
 ======
 
-![alt tag](https://raw.githubusercontent.com/consolemaverick/zsh2000/master/demo.png)
+![alt tag](https://raw.githubusercontent.com/kirpy0x/zsh-PurpleMint/master/demo.png)
 
-![alt tag](https://raw.githubusercontent.com/consolemaverick/zsh2000/master/demo2.png)
 
 Powerline looking zsh theme with rvm prompt, git status and branch, current time, user, hostname, pwd, exit status, root and background job status.
 
 Influenced heavily by [agnoster's theme](https://gist.github.com/3712874) and [jeremyFreeAgent's theme](https://github.com/jeremyFreeAgent/oh-my-zsh-powerline-theme)
+Forked from [consolemaverick](https://github.com/consolemaverick/zsh2000)
 
 ### Prerequisites
 
-Install your favorite version of
-[Powerline-patched fonts](https://github.com/Lokaltog/powerline-fonts)
+My Terminal: Kitty
+My Font: ComicMono
 
 ### Installation
 
-    git clone https://github.com/consolemaverick/zsh2000.git
-    ln -s zsh2000.zsh-theme ~/.oh-my-zsh/themes/zsh2000.zsh-theme
+Past this into your `.zshrc`.
+```sh
+if [ -f ~/.oh-my-zsh/custom/themes/PurpleMint.zsh-theme ]; then
+else
+  git clone https://github.com/kirpy0x/zsh-PurpleMint.git ~/.oh-my-zsh/custom/themes/PurpleMint
+  mv ~/.oh-my-zsh/custom/themes/PurpleMint/PurpleMint.zsh-theme ~/.oh-my-zsh/custom/themes/PurpleMint.zsh-theme
+  rm -rf ~/.oh-my-zsh/custom/themes/PurpleMint
+fi
 
-Modify ~/.zshrc setting
-
-    ZSH_THEME="zsh2000"
+ZSH_THEME="PurpleMint"
+```
 
 ### Configuration
-
-Place these above this line in your ~/.zshrc:
-
-    ZSH_THEME="zsh2000"
 
 Disable the right hand side prompt entirely
 

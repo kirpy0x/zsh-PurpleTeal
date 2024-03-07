@@ -51,7 +51,7 @@ prompt_user_hostname() {
   local user=`whoami`
 
   if [ -n "$SSH_CLIENT" ]; then
-    prompt_segment black default "%(!.%{%F{yellow}%}.)$user@%m"
+    prompt_segment black default "%(!.%{%F{raspberry}%}.)$user@%m"
   fi
 }
 
@@ -74,7 +74,7 @@ prompt_git() {
 }
 
 prompt_dir() {
-  prompt_segment blue white '%~'
+  prompt_segment '#4F2984' white '%~'
 }
 
 # Status:
@@ -84,15 +84,15 @@ prompt_dir() {
 prompt_status() {
   local symbols
   symbols=()
-  [[ $RETVAL -ne 0 ]] && symbols+="%{%F{yellow}%}✖"
-  [[ $UID -eq 0 ]] && symbols+="%{%F{yellow}%}⚡"
+  [[ $RETVAL -ne 0 ]] && symbols+="%{%F{raspberry}%}✖"
+  [[ $UID -eq 0 ]] && symbols+="%{%F{raspberry}%}⚡"
   [[ $(jobs -l | wc -l) -gt 0 ]] && symbols+="%{%F{cyan}%}⚙"
 
   [[ -n "$symbols" ]] && prompt_segment black default "$symbols"
 }
 
 prompt_time() {
-  prompt_segment_right white black '%D{%H:%M:%S} '
+  prompt_segment_right '#008093' black '%D{%H:%M:%S} '
 }
 
 prompt_rvm() {
@@ -115,7 +115,7 @@ build_prompt() {
 }
 
 ZSH_THEME_GIT_TIME_SINCE_COMMIT_SHORT="%{$fg[green]%}"
-ZSH_THEME_GIT_TIME_SHORT_COMMIT_MEDIUM="%{$fg[yellow]%}"
+ZSH_THEME_GIT_TIME_SHORT_COMMIT_MEDIUM="%{$fg[raspberry]%}"
 ZSH_THEME_GIT_TIME_SINCE_COMMIT_LONG="%{$fg[red]%}"
 ZSH_THEME_GIT_TIME_SINCE_COMMIT_NEUTRAL="%{$fg[cyan]%}"
  
